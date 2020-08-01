@@ -14,13 +14,13 @@ function GetData({ searchKey }) {
                 format: 'json'
     }},[])
     .then(response=>{
-    setData(response.data.similarartists.artist); console.log(data)})
+    setData(response.data.similarartists.artist);/* console.log(data)*/})
     .catch(error=>console.log(error));
     });
 
     return (
         <div className="datafield">
-            {data.map(item=><ArtistCard bandName={item.name} image={item['image'][1]["#text"]} match={parseFloat(item.match)} />)}
+            {data.map(item=><ArtistCard bandName={item.name} image={item['image'][1]["#text"]} match={parseFloat(item.match)} url={item.url} />)}
         </div>
     )
 }

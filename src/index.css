@@ -1,13 +1,31 @@
+body{
+  background-color: grey;
+}
 #root{
   text-align:center;
   margin-top:15rem;
 }
-
 
 .datafield{
   display:flex;
   flex-wrap:wrap;
   justify-content: space-around;
   align-items:flex-start;
+}
+
+.topSongs{
+  margin-top:15px;
+}
+
+h4{
+  cursor:pointer;
+}
+
+.fa-bookmark{
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:10;
+  cursor:pointer;
 }
 

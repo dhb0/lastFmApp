@@ -23,8 +23,6 @@ const InputField = (props) => {
                     onChange={inputChangeHandler}
                     onKeyPress={inputEnter} />
             <button className="ui button" type="submit" onClick={()=>buttonClicked(searchKey)}>Search</button>
-            <br />
-            <h1>{searchKey}</h1>
         </div>
     )
 }
