@@ -8,7 +8,7 @@ function ArtistCard(props) {
 	const [topSongs, setTopSongs] = useState([]);
 	const [bookmark, setBootmark] = useState(false);
 	const bookmarkClicked = () => {
-		setBootmark(!bookmark)
+		setBootmark(!bookmark);
 	}
 	const bookmarkStyle = bookmark ? {color: '#faf75a'} : {color:'#ADD8E5' }
 	const showTopSongs = () => {
