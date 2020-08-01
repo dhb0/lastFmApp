@@ -1,0 +1,13 @@
+#root{
+  text-align:center;
+  margin-top:15rem;
+}
+
+
+.datafield{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items:flex-start;
+}
+
