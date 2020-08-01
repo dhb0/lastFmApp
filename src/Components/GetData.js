@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ArtistCard from './ArtistCard'
+import ArtistCard from './ArtistCard';
 
 function GetData({ searchKey }) {
     const[data, setData] = useState([]);

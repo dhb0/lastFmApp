@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import axios from 'axios';
+import uuid from 'uuid/v4'
 
 function ArtistCard(props) {
 	const { bandName, image, match, url} = props;
@@ -35,14 +36,16 @@ function ArtistCard(props) {
         <div className="content">
           <a href={url} target="_blank" className="header">{ bandName }</a>
           <div className="description">
-            Match: % { parseFloat(match*100).toFixed(0) }
+            <p>Match: { parseFloat(match*100).toFixed(0) } % </p>
 		  </div>
 		  <div className="topSongs">
 			 <h4 onClick={showTopSongs}>Top Songs</h4>
+			 <ul>
 			 {
-				 topSongsClicked ? topSongs.map((topSongs)=><h5>{topSongs.name}</h5>)
+				 topSongsClicked ? topSongs.map((topSongs)=><li key={uuid()}>{topSongs.name}</li>)
 				 : null
 			 }
+			 </ul>
 		  </div>
         </div>
 
