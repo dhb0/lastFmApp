@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import axios from 'axios';
-import uuid from 'uuid/v4'
+import { v4 as uuidv4 } from 'uuid';
 
 function ArtistCard(props) {
 	const { bandName, image, match, url} = props;
@@ -42,7 +42,7 @@ function ArtistCard(props) {
 			 <h4 onClick={showTopSongs}>Top Songs</h4>
 			 <ul>
 			 {
-				 topSongsClicked ? topSongs.map((topSongs)=><li key={uuid()}>{topSongs.name}</li>)
+				 topSongsClicked ? topSongs.map((topSongs)=><li key={uuidv4()}>{topSongs.name}</li>)
 				 : null
 			 }
 			 </ul>
