@@ -19,9 +19,14 @@ body{
   flex-direction: column;
   align-items: center;
 }
-
-h4{
+.showTop{
+  display:flex;
+  align-items:center;
   cursor:pointer;
+}
+
+.showTop i{
+  margin-left:5px;
 }
 
 .fa-bookmark{

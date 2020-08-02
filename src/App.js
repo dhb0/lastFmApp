@@ -1,18 +1,11 @@
-import React, {useState} from 'react';
-import GetData from './Components/GetData';
-import InputField from './Components/InputField';
-
+import React, { useState } from 'react';
+import ArtistCardHolder from "./Components/ArtistCardHolder";
 
 function App() {
-  const [searchKey, setSearchKey] = useState('')
-  const buttonClicked = (data) => {
-    setSearchKey(data);
-  }
 
   return (
     <div className="App">
-      <InputField buttonClicked={buttonClicked} />
-      <GetData searchKey={searchKey}/>
+      <ArtistCardHolder  />
     </div>
   );
 }
